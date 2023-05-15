@@ -120,6 +120,14 @@
               "devServerTarget": "personal-website:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/personal-website",
+            "netlifyToken": "O9sap0eQxRqzPFiXbpNztE-hiz2G8z9okoCDPSqZCm4",
+            "siteId": "a266ee13-2f7e-4cef-aed9-3ddfe8b8c95c"
+          }
         }
       }
     }
