@@ -7,6 +7,9 @@ html, body {
   color: #d5d5d5;
   background-color: #222222;
 } 
+.inline-block {
+  display:inline-block;
+}
 body.modal-open {
   height: 100vh;
   overflow-y: hidden;
@@ -202,7 +205,7 @@ ul.carousel-indicators {
 .fa-css3 {
   color: #2163af;
 }
-.fa-code, .fa-bold, .fa-css3 {
+ .fa-arrow-up-wide-short, .fa-arrow-trend-up, .fa-bolt, .fa-code, .fa-bold, .fa-css3 {
   font-size: 5em;
   margin: 1rem;
 }
@@ -221,25 +224,42 @@ ul.carousel-indicators {
   max-width: 100%;
 }
 .quote-section {
-  padding:4rem; 
-  padding-top: 0rem;
+  padding-left:4rem; 
+  // padding-top: 0rem;
   border-radius: 5px;
   border-width: 2px;
   border-color: #DD6B37;
   box-sizing: border-box;
 }
-/* .quote {
-  
-} */
+.quotation h1 {
+  margin-bottom: -10px;
+}
+.end-quote {
+  position:absolute;
+  right:30px;
+  bottom:100px;
+}
+.first-quote {
+  text-indent: 50px;
+}
 .quoter {
   text-align: left;
   text-indent: 100px;
 }
 .quotes-image {
   padding: .5in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust this value based on your layout */
 }
 .card-body {
   color: #000;
+}
+.colorful {
+  background: -webkit-linear-gradient(0deg,rgb(132, 0, 194), #DD6B37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .social a {
   font-size: 4.5em;
@@ -481,10 +501,22 @@ figure {
     opacity:0;
     z-index:2;
 }
+.navbar-nav .active {
+  background: -webkit-linear-gradient(0deg,rgb(132, 0, 194), #DD6B37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .aboutText {
   padding-left: 15rem;
   padding-right: 15rem;
   padding-top: 1.5rem;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+.hug-below {
+  margin-bottom: -27px;
 }
 
 

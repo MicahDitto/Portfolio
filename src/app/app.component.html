@@ -2,5 +2,5 @@
 	<app-header></app-header> 
 </nav>
 <app-to-top-button></app-to-top-button>
-<router-outlet></router-outlet>
+<router-outlet (activate)="scrollToTop();"></router-outlet>
 <app-footer></app-footer>
